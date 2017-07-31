@@ -1,0 +1,32 @@
+{
+  "name": "portfolio2017",
+  "version": "1.0.0",
+  "description": "New portfolio",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "sass",
+    "npm",
+    "bootstrap",
+    "jquery",
+    "javascript",
+    "ux"
+  ],
+  "author": "Jennifer Jara Rojas",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "jquery": "^3.2.1"
+  },
+  "dependencies": {
+    "request": "^2.81.0"
+  }
+}
