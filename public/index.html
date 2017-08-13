@@ -4,11 +4,210 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="initial-scale=1">
-	<link rel="stylesheet" href="css/public.css">
+	<link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/vendor/jquery.bxslider.css">
+	<link rel="stylesheet" href="assets/css/public.css">
 	<title>Document</title>
 </head>
 <body>
+	<section id="hero">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-5 text-center">
+					<h1>Hello World!</h1>
+				</div>
+				<div class="col-xs-12 col-md-7">
+					<div class="hero_wellcome_wrap">
+						<h2>Hi, I'm Jennifer Jara a Junior Frontend Developer.</h2>
+						<h2>Welcome to my online portfolio! Here is the collection of my work. Please feel free to explore!</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="about">
+		 <div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-4">
+					<div class="about_perfil">
+						<img class="center-block" src="assets/images/perfil.jpg" alt="">
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-8">
+					<div class="about_description">
+						<p>También me interesa el estilo minimalista, la musica rock-pop-alternativo-indierock  (o algo así), los libros de supenso y terror, las películas de súper héroes y uno de mis pasatiempos favoritos es subtitular vídeos de ingles a español</p>
+						<a target="_blank" href="https://www.youtube.com/c/je2nifer">(De hecho tengo un canal en Youtube te invito a visitarlo!)</a>
+					</div>
+					<hr>
+				</div>
+			</div>
+		 </div>
+	</section>
 	
-	<script type="text/javascript" src="js/public.js"></script>
+	<section id="skills">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2>Estas son las herramientas que me dan súper poderes</h2>
+				</div>
+				<div class="col-xs-12 col-md-4 hidden-sm">
+					<div>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-8">
+					<div>
+						<div class="skills_logos">
+							<img src="assets/images/skills/css.png" alt="tech-skill">
+							<img src="assets/images/skills/css.png" alt="tech-skill">
+							<img src="assets/images/skills/css.png" alt="tech-skill">
+						</div>
+						<div class="skills_logos">
+							<img src="assets/images/skills/css.png" alt="tech-skill">
+							<img src="assets/images/skills/css.png" alt="tech-skill">
+							<img src="assets/images/skills/css.png" alt="tech-skill">
+						</div>
+						<div class="skills_logos">
+							<img src="assets/images/skills/css.png" alt="tech-skill">
+							<img src="assets/images/skills/css.png" alt="tech-skill">
+							<img src="assets/images/skills/css.png" alt="tech-skill">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="works">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2>Proyectos</h2>
+					<p>Los siguientes proyectos los realice en el bootcamp de Laboratoria, trabajando de forma individual o por equipos de dos hsta cuatro developers.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-md-5">
+					<div id="works_descrip_1" class="works_descrip_wrapper">
+						<h2>WebChat</h2>
+						<p>Este proyecto es un chat y video llamada. Usamos Socket.io, que es una libreria de JavaScript que permite manejar eventos y la comunicacion entre el cliente y servidor a tiempo real.</p>
+						<div class="text-center">
+							<a class="btn hvr-icon-wobble-horizontal" target="_blank" href="https://wcht.herokuapp.com/">Ver el demo</a>
+							<a class="btn hvr-icon-wobble-horizontal" target="_blank" href="https://github.com/jenniferjara/webchat">Ver en Github</a>
+						</div>
+					</div>
+					<div id="works_descrip_2" style="display: none;" class="works_descrip_wrapper">
+						<h2>Peter Pan Music</h2>
+						<p>Web en el cual puedes reproducir música y ver la letra de ella de Spotify, tambien tiene un link den búsqueda de vídeo en Youtube y búsqueda ce canciones por reconocimiento de voz.</p>
+						<div class="text-center">
+							<a class="btn hvr-icon-wobble-horizontal" target="_blank" href="http://project-pm.herokuapp.com/">Ver el demo</a>
+							<a class="btn hvr-icon-wobble-horizontal" target="_blank" href="https://github.com/jenniferjara/proyectoPM">Ver en Github</a>
+						</div>
+					</div>
+					<div id="works_descrip_3" style="display: none;" class="works_descrip_wrapper">
+						<h2>Lyft</h2>
+						<p>Proyecto de app móvil, para su desarrollo se utilizo JavaScript y jQuery (librerias de JavaScript) y tambien el API de geolocalización de Google.</p>
+						<div class="text-center">
+							<a class="btn btn-project hvr-icon-wobble-horizontal" target="_blank" href="https://jenniferjara.github.io/lyft-demo">Ver el demo</a>
+							<a class="btn btn-project hvr-icon-wobble-horizontal" target="_blank" href="https://github.com/jenniferjara/lyft-demo">Ver en Github</a>
+						</div>
+					</div>
+					<div id="works_descrip_4" style="display: none;" class="works_descrip_wrapper">
+						<h2>Mensajeria Instantanea</h2>
+						<p>El siguiente proyecto está basado en la dinamica de publicación de twiiter, se uso el framework Materialize y JavaScript para la manipulación del DOM y eventos.</p>
+						<div class="text-center">
+							<a class="btn btn-project hvr-icon-wobble-horizontal" target="_blank" href="https://jenniferjara.github.io/twitter">Ver el demo</a>
+							<a class="btn btn-project hvr-icon-wobble-horizontal" target="_blank" href="https://github.com/jenniferjara/twitter">Ver en Github</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-7">
+					<ul class="bxslider">
+						<li>
+							<div class="works_slider_wrapper">
+								<img data-image-index="0" src="assets/images/previa/webchat.png" alt="">
+							</div>
+						</li>
+						<li>
+							<div class="works_slider_wrapper">
+								<img data-image-index="1" src="assets/images/previa/peter-pan.png" alt="">
+							</div>
+						</li>
+						<li>
+							<div class="works_slider_wrapper">
+								<img data-image-index="2" src="assets/images/previa/lyft.png" alt="">
+							</div>
+						</li>
+						<li>
+							<div class="works_slider_wrapper">
+								<img data-image-index="2" src="assets/images/previa/twitter.png" alt="">
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2>¡Sigamos en Contacto!</h2>
+					<div>
+						<p>Hola de nuevo y gracias por llegar hasta aquí. Espero que te hayas entretenido con este contenido. Si te gusto mi trabajo, mis habilidades (y las que puedo seguir aprendiendo) o las tecnologías que conozco ponte en contacto conmigo, te dejo los medios para que puedas hacerlo. Fue un gusto y hasta pronto!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<p>
+						<span><i class="fa fa-rebel icon-final"></i></span>
+						<span>Copyright © 2016 • Jennifer Jara</span>
+						<a target="_blank" href="https://twitter.com/jenlisbet"><i class="fa fa-twitter icon-final"></i></a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="assets/js/public.js"></script>
+	<script type="text/javascript">
+		$('.bxslider').bxSlider({
+			auto: true,
+			onSlideAfter: function(index) {
+				var index = parseInt($('.bx-pager-link.active').attr('data-slide-index'));
+				console.log(index);
+				if (index == 0) {
+					$('#works_descrip_1').css('display', 'block');
+					$('#works_descrip_2').css('display', 'none');
+					$('#works_descrip_3').css('display', 'none');
+					$('#works_descrip_4').css('display', 'none');
+				} else if (index == 1) {
+					$('#works_descrip_1').css('display', 'none');
+					$('#works_descrip_2').css('display', 'block');
+					$('#works_descrip_3').css('display', 'none');
+					$('#works_descrip_4').css('display', 'none');
+				} else if (index == 2) {
+					$('#works_descrip_1').css('display', 'none');
+					$('#works_descrip_2').css('display', 'none');
+					$('#works_descrip_3').css('display', 'block');
+					$('#works_descrip_4').css('display', 'none');
+				} else if (index == 3) {
+					$('#works_descrip_1').css('display', 'none');
+					$('#works_descrip_2').css('display', 'none');
+					$('#works_descrip_3').css('display', 'none');
+					$('#works_descrip_4').css('display', 'block');
+				}
+			}
+		});
+	</script>
 </body>
 </html>

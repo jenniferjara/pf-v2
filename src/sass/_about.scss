@@ -1,0 +1,24 @@
+#about {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	height: 100vh;
+	.about_perfil {
+		img {
+			width: 100%;
+		}
+	}
+	.about_descriotion {
+
+	}
+}
+
+@media (max-width: 992px) {
+	#about {
+		height: auto;
+		.about_perfil {
+			img {
+				width: 200px;
+			}
+		}
+	}
+}

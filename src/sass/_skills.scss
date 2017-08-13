@@ -1,0 +1,32 @@
+#skills {
+	padding-bottom: 3rem;
+	padding-top: 3rem;
+	height: 100vh;
+	.skills_logos {
+		@include flexbox();
+		@include justify-content(space-evenly);
+		@include align-items(center);
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+
+		img {
+			width: 128px;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	#skills {
+		height: auto;
+	}
+
+}
+@media (max-width: 400px) {
+	#skills {
+		.skills_logos {
+			img {
+				width: 90px;
+			}
+		}
+	}
+}

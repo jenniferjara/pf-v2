@@ -1,0 +1,20 @@
+#hero {
+	@include flexbox();
+	@include align-items(center);
+	padding-bottom: 3rem;
+	padding-top: 3rem;
+	height: 100vh;
+
+	.hero_wellcome_wrap {
+		border: 3px solid #333;
+		padding: 2rem;
+	}
+}
+
+@media (max-width: 992px) {
+	#hero {
+		.hero_wellcome_wrap {
+			border: none;
+		}
+	}
+}
