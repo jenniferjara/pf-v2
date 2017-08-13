@@ -1,16 +1,32 @@
 #skills {
+	@include flexbox();
+	@include align-items(center);
 	padding-bottom: 3rem;
 	padding-top: 3rem;
 	height: 100vh;
-	.skills_logos {
-		@include flexbox();
-		@include justify-content(space-evenly);
-		@include align-items(center);
-		padding-bottom: 1rem;
-		padding-top: 1rem;
+	background-image: url('../images/habilidades.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	.skills_descrip_wrap {
+		margin-top: 12rem;
+		h2 {
+			text-align: left;
+		}
+	}
+	.skills_logos_wrap {
+		border-left: 3px solid #333;
+		.skills_logos {
+			@include flexbox();
+			@include justify-content(space-evenly);
+			@include align-items(center);
+			padding-bottom: 1rem;
+			padding-top: 1rem;
 
-		img {
-			width: 128px;
+			img {
+				width: 128px;
+			}
 		}
 	}
 }
@@ -18,14 +34,29 @@
 @media (max-width: 992px) {
 	#skills {
 		height: auto;
+		.skills_descrip_wrap {
+			margin-top: 0;
+			padding-bottom: 2rem;
+			padding-top: 2rem;
+			h2 {
+				text-align: center;
+			}
+		}
+		.skills_logos_wrap {
+			border-top: 3px solid #333;
+			border-left: none;
+			padding-top: 2rem;
+		}
 	}
 
 }
-@media (max-width: 400px) {
+@media (max-width: 460px) {
 	#skills {
-		.skills_logos {
-			img {
-				width: 90px;
+		.skills_logos_wrap {
+			.skills_logos {
+				img {
+					width: 30%;
+				}
 			}
 		}
 	}

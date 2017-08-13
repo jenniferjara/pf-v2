@@ -14,13 +14,32 @@ body {
 h1 {
 	font-family: 'Abel', sans-serif;
 	font-size: 50px;
+	font-weight: bold;
 }
 h2 {
 	font-family: 'Unica One', cursive;
 	font-size: 38px;
 }
+h3 {
+	font-size: 30px;
+    font-family: 'Unica One',cursive;
+    font-weight: bold;
+}
+footer {
+	background-color: #000000;
+	color: #ffffff;
+	height: 82px;
+	@include flexbox();
+	@include align-items(center);
+}
 
 @media (max-width: 992px) {
+	body {
+		font-size: 18px;
+	}
+	h1 {
+		font-size: 40px;
+	}
 	h2 {
 		font-size: 34px;
 	}

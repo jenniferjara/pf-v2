@@ -1,20 +1,56 @@
 #hero {
 	@include flexbox();
 	@include align-items(center);
+	background-image: url("../images/bg-hero-2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 	padding-bottom: 3rem;
 	padding-top: 3rem;
 	height: 100vh;
-
-	.hero_wellcome_wrap {
-		border: 3px solid #333;
-		padding: 2rem;
+	.hero_wrap {
+		background-color: #ffffff;
+		box-shadow: 0 0 50px rgba(51, 51, 51, 0.3);
+		border-radius: 10px;
+		padding: 3rem;
+		.hero_logo_wrap {
+			padding-top: 1rem;
+			padding-bottom: 4rem;
+			img {
+				width: 100px;
+			}
+		}
+		.hero_wellcome_wrap {
+			border-left: 3px solid #333;
+			padding-left: 5rem;
+			padding-bottom: 1rem;
+			padding-top: 1rem;
+		}
 	}
 }
 
 @media (max-width: 992px) {
 	#hero {
-		.hero_wellcome_wrap {
-			border: none;
+		.hero_wrap {
+			.hero_logo_wrap {
+				padding-bottom: 3rem;
+				img {
+					width: 60px;
+				}
+			}
+			.hero_wellcome_wrap {
+				border-left: none;
+				border-top: 3px solid #333;
+				padding-top: 1rem;
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}
 		}
+	}
+}
+@media (max-width: 520px) {
+	#hero {
+		height: auto;
 	}
 }
