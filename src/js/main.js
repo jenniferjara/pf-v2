@@ -1,30 +1,27 @@
-var inicio = function() {
-	$('.bx-wrapper .bx-controls-direction a').on('click', function(e){
-		e.preventDefault();
-		var index = parseInt($('.bx-pager-link.active').attr('data-slide-index'));
-		console.log(index);
-		if (index == 0) {
-			$('#works_descrip_1').css('display', 'block');
-			$('#works_descrip_2').css('display', 'none');
-			$('#works_descrip_3').css('display', 'none');
-			$('#works_descrip_4').css('display', 'none');
-		} else if (index == 1) {
-			$('#works_descrip_1').css('display', 'none');
-			$('#works_descrip_2').css('display', 'block');
-			$('#works_descrip_3').css('display', 'none');
-			$('#works_descrip_4').css('display', 'none');
-		} else if (index == 2) {
-			$('#works_descrip_1').css('display', 'none');
-			$('#works_descrip_2').css('display', 'none');
-			$('#works_descrip_3').css('display', 'block');
-			$('#works_descrip_4').css('display', 'none');
-		} else if (index == 3) {
-			$('#works_descrip_1').css('display', 'none');
-			$('#works_descrip_2').css('display', 'none');
-			$('#works_descrip_3').css('display', 'none');
-			$('#works_descrip_4').css('display', 'block');
-		}
-	});
-}
+(function($) {
 
-$(document).ready(inicio);
+    'use strict';
+
+	var scrollMenu = function() {
+		var start_change = $('.navbar');
+			start_change.toggleClass('is-fill', $(this).scrollTop() > start_change.height());
+	};
+
+    var typed = new Typed('#typed', {
+        strings: ["Frontend Developer."],
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 500,
+        startDelay: 500,
+        loop: false
+    });
+
+    var inicio = function() {
+		typed.start();
+
+		$(document).scroll(scrollMenu);
+	}
+
+	$(document).ready(inicio); 
+
+})(window.jQuery);

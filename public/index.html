@@ -3,214 +3,295 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/vendor/jquery.bxslider.css">
+	<link rel="stylesheet" href="assets/css/vendor/animate.css">
 	<link rel="stylesheet" href="assets/css/public.css">
 	<title>Document</title>
 </head>
 <body>
-	<section id="hero">
-		<div class="container">
-			<div class="hero_wrap">
-				<div class="row">
-					<div class="col-xs-12 col-md-5 text-center">
-						<div class="hero_logo_wrap">
-							<img class="img-responsive" src="assets/images/logo-hero2.png" alt="">
-						</div>
-					</div>
-					<div class="col-xs-12 col-md-7">
-						<div class="hero_wellcome_wrap">
-							<h1>Hi, I'm Jennifer Jara a Junior Frontend Developer.</h1>
-							<h2>Welcome to my online portfolio! Here is the collection of my work. Please feel free to explore!</h2>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 
-	<section id="about">
-		 <div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-sm-4">
-					<div class="about_perfil">
-						<img class="center-block" src="assets/images/perfil.png" alt="">
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-8">
-					<div class="about_description">
-						<p>También me interesa el estilo minimalista, la musica rock-pop-alternativo-indierock  (o algo así), los libros de supenso y terror, las películas de súper héroes y uno de mis pasatiempos favoritos es subtitular vídeos de ingles a español</p>
-						<a target="_blank" href="https://www.youtube.com/c/je2nifer">(De hecho tengo un canal en Youtube te invito a visitarlo!)</a>
-					</div>
-					<hr>
-				</div>
-			</div>
-		 </div>
-	</section>
-	
-	<section id="skills">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-md-4">
-					<div class="skills_descrip_wrap">
-						<h2>Estas son las herramientas que me dan súper poderes</h2>
-					</div>
-				</div>
-				<div class="col-xs-12 col-md-8">
-					<div class="skills_logos_wrap">
-						<div class="skills_logos">
-							<img src="assets/images/skills/css.png" alt="tech-skill">
-							<img src="assets/images/skills/css.png" alt="tech-skill">
-							<img src="assets/images/skills/css.png" alt="tech-skill">
-						</div>
-						<div class="skills_logos">
-							<img src="assets/images/skills/css.png" alt="tech-skill">
-							<img src="assets/images/skills/css.png" alt="tech-skill">
-							<img src="assets/images/skills/css.png" alt="tech-skill">
-						</div>
-						<div class="skills_logos">
-							<img src="assets/images/skills/css.png" alt="tech-skill">
-							<img src="assets/images/skills/css.png" alt="tech-skill">
-							<img src="assets/images/skills/css.png" alt="tech-skill">
+	<div id="body_wrap">
+
+		<div id="navbar_menu">
+			<nav class="navbar navbar_fixed">
+				<div class="container">
+					<div class="navbar-header">
+						<div class="hidden-nav navbar-collapse">
+							<ul class="nav navbar-nav">
+								<li><a href="#"><i class="fa fa-hand-peace-o" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-laptop" aria-hidden="true"></i></a></li></a></li>
+								<li><a href="#"><i class="fa fa-code" aria-hidden="true"></i></a></li></a></li>
+								<li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li></a></li>
+							</ul>
 						</div>
 					</div>
+					<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="#about">Acerca de mi</a></li>
+							<li><a href="#knowledge">Herramientas</a></li>
+							<li><a href="#demos">Demos</a></li>
+							<li><a href="#contact">Contacto</a></li>
+						</ul>
+					</div>
 				</div>
-			</div>
+			</nav>
 		</div>
-	</section>
-	
-	<section id="works">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<h2>Proyectos</h2>
-					<p>Los siguientes proyectos los realice en el bootcamp de Laboratoria, trabajando de forma individual o por equipos de dos hsta cuatro developers.</p>
+
+		<section id="hero">
+			<div class="hero_wellcome">
+				<h2 class="text-uppercase">Hello, </h2>
+				<h1 class="text-uppercase">I'm Jennifer Jara</h1>
+				<div class="hero_text_typed">
+					<span id="typed" class="text-uppercase"></span>
 				</div>
+				<!-- <p>Welcome to my online portfolio! Here is the collection of my work. Please feel free to explore!</p> -->
+				<ul class="hero_main">
+					<li>
+						<a href="#about">
+							<i class="fa fa-hand-peace-o" aria-hidden="true"></i>
+							<span class="subtitles">Acerca de mí</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="fa fa-code" aria-hidden="true"></i>
+							<span class="subtitles">Demos</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="fa fa-envelope-o" aria-hidden="true"></i>
+							<span class="subtitles">Contacto</span>
+						</a>
+					</li>
+				</ul>
+				<div class="hero_main_divider"></div>
+				<ul class="hero_main">
+					<li>
+						<a href="">
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+							<span class="subtitles">Linkedin</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="fa fa-github" aria-hidden="true"></i>
+							<span class="subtitles">GitHub</span>
+						</a>
+					</li>
+				</ul>
+
 			</div>
-			<div class="row">
-				<div class="col-xs-12 col-md-5">
-					<div id="works_descrip_1" class="works_descrip_wrapper">
-						<h3>WebChat</h3>
-						<p>Este proyecto es un chat y video llamada. Usamos Socket.io, que es una libreria de JavaScript que permite manejar eventos y la comunicacion entre el cliente y servidor a tiempo real.</p>
-						<div class="text-center">
-							<a class="btn hvr-icon-wobble-horizontal" target="_blank" href="https://wcht.herokuapp.com/">Ver el demo</a>
-							<a class="btn hvr-icon-wobble-horizontal" target="_blank" href="https://github.com/jenniferjara/webchat">Ver en Github</a>
-						</div>
-					</div>
-					<div id="works_descrip_2" style="display: none;" class="works_descrip_wrapper">
-						<h3>Peter Pan Music</h3>
-						<p>Web en el cual puedes reproducir música y ver la letra de ella de Spotify, tambien tiene un link den búsqueda de vídeo en Youtube y búsqueda ce canciones por reconocimiento de voz.</p>
-						<div class="text-center">
-							<a class="btn hvr-icon-wobble-horizontal" target="_blank" href="http://project-pm.herokuapp.com/">Ver el demo</a>
-							<a class="btn hvr-icon-wobble-horizontal" target="_blank" href="https://github.com/jenniferjara/proyectoPM">Ver en Github</a>
-						</div>
-					</div>
-					<div id="works_descrip_3" style="display: none;" class="works_descrip_wrapper">
-						<h3>Lyft</h3>
-						<p>Proyecto de app móvil, para su desarrollo se utilizo JavaScript y jQuery (librerias de JavaScript) y tambien el API de geolocalización de Google.</p>
-						<div class="text-center">
-							<a class="btn btn-project hvr-icon-wobble-horizontal" target="_blank" href="https://jenniferjara.github.io/lyft-demo">Ver el demo</a>
-							<a class="btn btn-project hvr-icon-wobble-horizontal" target="_blank" href="https://github.com/jenniferjara/lyft-demo">Ver en Github</a>
-						</div>
-					</div>
-					<div id="works_descrip_4" style="display: none;" class="works_descrip_wrapper">
-						<h3>Mensajeria Instantanea</h3>
-						<p>El siguiente proyecto está basado en la dinamica de publicación de twiiter, se uso el framework Materialize y JavaScript para la manipulación del DOM y eventos.</p>
-						<div class="text-center">
-							<a class="btn btn-project hvr-icon-wobble-horizontal" target="_blank" href="https://jenniferjara.github.io/twitter">Ver el demo</a>
-							<a class="btn btn-project hvr-icon-wobble-horizontal" target="_blank" href="https://github.com/jenniferjara/twitter">Ver en Github</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-12 col-md-7">
-					<ul class="bxslider">
-						<li>
-							<div class="works_slider_wrapper">
-								<img data-image-index="0" src="assets/images/previa/webchat.png" alt="">
-							</div>
-						</li>
-						<li>
-							<div class="works_slider_wrapper">
-								<img data-image-index="1" src="assets/images/previa/peter-pan.png" alt="">
-							</div>
-						</li>
-						<li>
-							<div class="works_slider_wrapper">
-								<img data-image-index="2" src="assets/images/previa/lyft.png" alt="">
-							</div>
-						</li>
-						<li>
-							<div class="works_slider_wrapper">
-								<img data-image-index="2" src="assets/images/previa/twitter.png" alt="">
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<section id="contact">
-		<div class="container">
-			<div class="contact_wrapper">
+			<div class="hero_overlay"></div>
+		</section>
+
+		<section id="about">
+			 <div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<h2>¡Sigamos en Contacto!</h2>
-						<div>
-							<p>Hola de nuevo y gracias por llegar hasta aquí. Espero que te hayas entretenido con este contenido. Si te gusto mi trabajo, mis habilidades (y las que puedo seguir aprendiendo) o las tecnologías que conozco ponte en contacto conmigo, te dejo los medios para que puedas hacerlo. Fue un gusto y hasta pronto!</p>
+						<div class="title_page_box">
+							<h2 class="text-uppercase">Acerca de mi .<span class="line_title animated"></span></h2>
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<div class="about_border">
+							<div class="row">
+								<div class="col-lg-4 col-sm-6 col-xs-12">
+									<div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam dignissimos quas nisi ipsam reiciendis est quod debitis! Veritatis atque, quis sequi eius repellat quibusdam aspernatur natus praesentium, numquam laboriosam porro.</p>
+									</div>
+								</div>
+								<div class="col-lg-4 col-sm-6 col-xs-12"></div>
+								<div class="col-lg-4 col-sm-12 col-xs-12">
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="about_description">
+												<p>También me interesa el estilo minimalista, la musica rock-pop-alternativo-indierock  (o algo así), los libros de supenso y terror, las películas de súper héroes y uno de mis pasatiempos favoritos es subtitular vídeos de ingles a español</p>
+												<a target="_blank" href="https://www.youtube.com/c/je2nifer">(De hecho tengo un canal en Youtube te invito a visitarlo!)</a>
+											</div>
+										</div>
+										<!-- <div class="col-sm-4">
+											<div class="about_perfil">
+												<img class="center-block" src="assets/images/perfil.jpg" alt="">
+											</div>
+										</div> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			 </div>
+		</section>
+		
+		<section id="knowledge">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						
+						<div class="knowledge_wrap">
+							<h2 class="knowledge_title"><span>Las herramientas que manejo</span></h2>
+							<ul>
+								<li class="option-1">
+									<span>Javascript</span>
+								</li>
+								<li class="option-2">
+									<span>html</span>
+								</li>
+								<li class="option-3">
+									<span>sass</span>
+								</li>
+								<li class="option-4">
+									<span>css</span>
+								</li>
+								<li class="option-5">
+									<span>jquery</span>
+								</li>
+								<li class="option-6">
+									<span>git</span>
+								</li>
+								<li class="option-7">
+									<span>bootstrap</span>
+								</li>
+								<li class="option-8">
+									<span>materialize</span>
+								</li>
+								<li class="option-9">
+									<span>responsive</span>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	
-	<footer>
-		<div class="container">
+		</section>
+
+		<section id="demo">
 			<div class="row">
-				<div class="col-xs-12">
-					<p>
-						<span><i class="fa fa-rebel icon-final"></i></span>
-						<span>Copyright © 2016 • Jennifer Jara</span>
-						<a target="_blank" href="https://twitter.com/jenlisbet"><i class="fa fa-twitter icon-final"></i></a>
-					</p>
+				<div class="col-lg-4 col-sm-6 col-xs-12">
+				<div class="demo_bg">
+					<div class="demo_content">
+						<div class="demo_titles">
+							<h4>demo #1</h4>
+						</div>
+						<div class="demo_links">
+							<a href="">Demo</a>
+							<a href="">Código</a>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
+				<div class="col-lg-4 col-sm-6 col-xs-12">
+					<div class="demo_bg">
+						<div class="demo_content">
+							<div class="demo_titles">
+								<h4>demo #1</h4>
+							</div>
+							<div class="demo_links">
+								<a href="">Demo</a>
+								<a href="">Código</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 col-xs-12">
+					<div class="demo_bg">
+						<div class="demo_content">
+							<div class="demo_titles">
+								<h4>demo #1</h4>
+							</div>
+							<div class="demo_links">
+								<a href="">Demo</a>
+								<a href="">Código</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 col-xs-12">
+					<div class="demo_bg">
+						<div class="demo_content">
+							<div class="demo_titles">
+								<h4>demo #1</h4>
+							</div>
+							<div class="demo_links">
+								<a href="">Demo</a>
+								<a href="">Código</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 col-xs-12">
+					<div class="demo_bg">
+						<div class="demo_content">
+							<div class="demo_titles">
+								<h4>demo #1</h4>
+							</div>
+							<div class="demo_links">
+								<a href="">Demo</a>
+								<a href="">Código</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 col-xs-12">
+					<div class="demo_bg">
+						<div class="demo_content">
+							<div class="demo_titles">
+								<h4>demo #1</h4>
+							</div>
+							<div class="demo_links">
+								<a href="">Demo</a>
+								<a href="">Código</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="title_page_box">
+							<h2 class="text-uppercase">Sigamos en Contacto .<span class="line_title animated" data-animation="line_full"></span></h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-4"></div>
+					<div class="col-xs-12 col-md-8">
+						<div>
+							<div>
+								<p>Hola de nuevo y gracias por llegar hasta aquí. Espero que te hayas entretenido con este contenido. <br>Si te gusto mi trabajo, mis habilidades (y las que puedo seguir aprendiendo) o las tecnologías que conozco ponte en contacto conmigo, te dejo los medios para que puedas hacerlo. <br> Fue un gusto y hasta pronto!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<p class="text-center">
+							<span><i class="fa fa-rebel icon-final"></i></span>
+							<span>By Jennifer Jara</span>
+							<a target="_blank" href="https://twitter.com/jenlisbet"><i class="fa fa-twitter"></i></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+	</div>
+
+
 	<script type="text/javascript" src="assets/js/public.js"></script>
-	<script type="text/javascript">
-		$('.bxslider').bxSlider({
-			auto: true,
-			onSlideAfter: function(index) {
-				var index = parseInt($('.bx-pager-link.active').attr('data-slide-index'));
-				console.log(index);
-				if (index == 0) {
-					$('#works_descrip_1').css('display', 'block');
-					$('#works_descrip_2').css('display', 'none');
-					$('#works_descrip_3').css('display', 'none');
-					$('#works_descrip_4').css('display', 'none');
-				} else if (index == 1) {
-					$('#works_descrip_1').css('display', 'none');
-					$('#works_descrip_2').css('display', 'block');
-					$('#works_descrip_3').css('display', 'none');
-					$('#works_descrip_4').css('display', 'none');
-				} else if (index == 2) {
-					$('#works_descrip_1').css('display', 'none');
-					$('#works_descrip_2').css('display', 'none');
-					$('#works_descrip_3').css('display', 'block');
-					$('#works_descrip_4').css('display', 'none');
-				} else if (index == 3) {
-					$('#works_descrip_1').css('display', 'none');
-					$('#works_descrip_2').css('display', 'none');
-					$('#works_descrip_3').css('display', 'none');
-					$('#works_descrip_4').css('display', 'block');
-				}
-			}
-		});
-	</script>
+
 </body>
 </html>

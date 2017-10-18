@@ -1,24 +1,33 @@
 #about {
+	@include flexbox();
+	@include align-items(center);
+	// background-color: #ffffff;
+	background-image: url("../images/pattern-light.png");
+	background-repeat: repeat;
 	padding-top: 3rem;
 	padding-bottom: 3rem;
-	height: 100vh;
+	height: 650px;
 	.about_perfil {
 		img {
-			width: 100%;
+			width: 70%;
 		}
 	}
-	.about_descriotion {
-
+	
+	.about_title_wrap {
+		padding-top: 12rem;
 	}
 }
 
 @media (max-width: 992px) {
 	#about {
 		height: auto;
-		.about_perfil {
-			img {
-				width: 200px;
-			}
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+		
+		.about_title_wrap {
+			text-align: center;
+			padding-bottom: 2rem;
+			padding-top: 2rem;
 		}
 	}
 }

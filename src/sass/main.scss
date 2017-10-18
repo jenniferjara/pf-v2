@@ -1,46 +1,101 @@
+@import 'fontawesome/font-awesome';
 @import '_mixins';
 
+@import '_navbar';
 @import '_hero';
-@import '_works';
-@import '_skills';
 @import '_about';
+@import '_skills';
+@import '_demos';
 @import '_contact';
 
 body {
-	background-color: #e0e0e0;
-	font-family: "Lato","Helvetica Neue";
-	font-size: 20px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 18px;
 }
 h1 {
-	font-family: 'Abel', sans-serif;
-	font-size: 50px;
-	font-weight: bold;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 70px;
 }
 h2 {
-	font-family: 'Unica One', cursive;
+	font-family: 'Ubuntu', cursive;
 	font-size: 38px;
 }
 h3 {
 	font-size: 30px;
-    font-family: 'Unica One',cursive;
-    font-weight: bold;
+    font-family: 'Ubuntu', cursive;
+}
+hr {
+	border-top: 3px solid #333;
 }
 footer {
-	background-color: #000000;
+	background-color: #4c4c4c;
+	background-image: url("../images/pattern-dark.jpg");
+	background-repeat: repeat;
 	color: #ffffff;
 	height: 82px;
 	@include flexbox();
 	@include align-items(center);
 }
 
-@media (max-width: 992px) {
-	body {
-		font-size: 18px;
+#body_wrap {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+}
+
+.title_page_box {
+	color: #4c4c4c;
+	h2 {
+		text-transform: uppercase;
+		position: relative;
+		font-size: 30px;
+		display: inline-block;
+		z-index: 2;
+		margin-top: 0;
+		margin-bottom: 30px;
+		font-weight: bold;
+			span.line_title {
+				position: absolute;
+				left: 0;
+				bottom: -10px;
+				width: 95%;
+				height: 2px;
+				z-index: -1;
+				background-color: #4c4c4c;
+			}
+
+			.line_full {
+				width: 100%;
+			}
+		}
 	}
+
+
+@media screen and (max-width: 992px) {
+	body {
+		font-size: 16px;
+	}
+	h1 {
+		font-size: 50px;
+	}
+	h2 {
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.title_page_box h2 {
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 480px) {
 	h1 {
 		font-size: 40px;
 	}
-	h2 {
-		font-size: 34px;
+	.title_page_box h2 {
+		font-size: 25px;
 	}
+
 }

@@ -1,0 +1,54 @@
+#demo {
+
+    div[class^="col-"], div[class*='col-'] {
+      padding: 0;
+      border: 1px solid rgba(88, 87, 88, 0.25);
+      margin: 0;
+    }
+    
+    .demo_bg {
+      background-color: #fff;
+      background-repeat: no-repeat;
+      background-position: center;
+      -webkit-background-size: cover;
+      background-size: cover;
+      display: table;
+      height: 300px;
+      text-align: center;
+      vertical-align: middle;
+      width: 100%;
+
+      .demo_content {
+        vertical-align: middle;
+        display: table-cell;
+
+        .demo_titles {
+          padding: 20px 0px;
+
+          h4 {
+            letter-spacing: 2px;
+            margin: 0;
+            text-transform: uppercase;
+          }
+        }
+        .demo_links {
+          a {
+            display: inline-block;
+            padding: 3px 15px;
+            border: 1px solid #000;
+            border-radius: 4px;
+            margin: 5px 10px;
+            color: #000;
+          }
+        }
+      }
+    }
+}
+
+@media screen and (max-width: 992px) {
+	
+}
+
+@media screen and (max-width: 480px) {
+
+}
