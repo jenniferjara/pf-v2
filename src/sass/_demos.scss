@@ -1,59 +1,78 @@
 #demo {
+    box-sizing: border-box;
+    padding: 15px 15px;
 
-    div[class^="col-"], div[class*='col-'] {
-      padding: 0;
-      margin: 0;
-    }
-    
     .demo_bg {
-      background-color: #fff;
-      background-repeat: no-repeat;
-      background-position: center;
-      -webkit-background-size: cover;
-      background-size: cover;
-      display: table;
-      height: 300px;
-      text-align: center;
-      vertical-align: middle;
-      width: 100%;
-
-      .demo_content {
-        vertical-align: middle;
-        display: table-cell;
-
-        .demo_titles {
-          padding: 20px 0px;
-
-          h4 {
-            letter-spacing: 2px;
-            margin: 0;
-            text-transform: uppercase;
-          }
-        }
-        .demo_links {
-          a {
-            display: inline-block;
-            padding: 3px 15px;
-            border: 1px solid #000;
-            border-radius: 4px;
-            margin: 5px 10px;
-            color: #000;
-          }
-        }
-      }
+      @include flexbox();
+      @include align-items(center);
+      @include justify-content(center);
+      border-spacing: 10px;
+      height: 350px;
 
       .demo_bg_overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: cover;
+        background-size: cover;
+        text-align: center;
+        width: 33.99%;
+
+        .demo_content {
+          display: table-cell;
+          vertical-align: middle;
+          border: 2px solid #000000;
+          height: 330px;
+          width: 95%;
+
+          .demo_titles {
+            padding: 20px 0px;
+
+            h4 {
+              letter-spacing: 2px;
+              margin: 0;
+              text-transform: uppercase;
+              font-weight: bold;
+            }
+          }
+          .demo_links {
+            a {
+              display: inline-block;
+              padding: 3px 15px;
+              border: 1px solid #000;
+              border-radius: 4px;
+              margin: 5px 10px;
+              color: #000;
+            }
+          }
+          .demo_bottom {
+            width: 80%;
+            margin: 0 auto;
+            padding: 10px 0px;
+            font-size: 16px;
+          }
+        }
       }
     }
 }
 
-@media screen and (max-width: 992px) {
-	
+
+@media screen and (max-width: 920px) {
+	#demo {
+      .demo_bg {
+        display: block;
+        height: auto;
+        .demo_bg_overlay {
+          width: 100%;
+          padding: 10px 0px;
+          .demo_content {
+            height: auto;
+            width: 100%;
+            padding: 10px 0px;
+          }
+        }
+      }
+    }
 }
 
 @media screen and (max-width: 480px) {

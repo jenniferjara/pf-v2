@@ -53,6 +53,7 @@
 				-ms-transition: all 0.1s ease-in-out;
 				-o-transition: all 0.1s ease-in-out;
 				transition: all 0.1s ease-in-out;
+				text-shadow: rgba(0,0,0,.8) 0 2px 4px;
 			}
 
 			.subtitles {
@@ -110,7 +111,7 @@
 		height: 100%;
 		top: 0;
 		left: 0;
-		background-color: rgba(134, 76, 113, 0.6);
+		background-color: rgba(79, 81, 128, 0.2);
 	}
 }
 
