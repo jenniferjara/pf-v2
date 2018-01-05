@@ -54,6 +54,10 @@
         }
       }
     }
+
+    .demo_more {
+      visibility: hidden;
+    }
 }
 
 
@@ -63,7 +67,8 @@
         display: block;
         height: auto;
         .demo_bg_overlay {
-          width: 100%;
+          margin: 0 auto;
+          width: 70%;
           padding: 10px 0px;
           .demo_content {
             height: auto;
@@ -72,9 +77,35 @@
           }
         }
       }
+      .demo_bg:nth-child(2) {
+        display: none;
+      }
+      .demo_more {
+        visibility: visible;
+        a {
+          background-color: #d2056d;
+          border-radius: 50%;
+          color: #fff;
+          display: table-cell;
+          font-size: 14px;
+          font-weight: bold;
+          height: 80px;
+          text-align: center;
+          text-decoration: none;
+          vertical-align: middle;
+          width: 80px;
+        }
+      }
     }
 }
 
 @media screen and (max-width: 480px) {
-
+  #demo {
+    .demo_bg {
+      .demo_bg_overlay {
+        width: 100%;
+        margin: inherit;
+      }
+    }
+  }
 }

@@ -24,16 +24,17 @@
 			padding: 20px;
 			span {
 				display: block;
+				color: #d2056d;
+				font-size: 25px;
+				font-weight: bold;
 				position: relative;
 				left: 50%;
 				top: 50%;
 				bottom: auto;
 				right: auto;
 				transform: translateX(-50%) translateY(-50%);
-				color: #855f92;
 				text-transform: uppercase;
 				letter-spacing: 2px;
-				font-size: 25px;
 			}
 		}
 		ul {
