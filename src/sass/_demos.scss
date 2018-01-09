@@ -56,13 +56,15 @@
     }
 
     .demo_more {
-      visibility: hidden;
+      display: none;
     }
 }
 
 
 @media screen and (max-width: 920px) {
 	#demo {
+      position: relative;
+
       .demo_bg {
         display: block;
         height: auto;
@@ -81,20 +83,26 @@
         display: none;
       }
       .demo_more {
-        visibility: visible;
+        display: block;
+        position: absolute;
+        bottom: 30px;
+        left: 10px;
         a {
           background-color: #d2056d;
           border-radius: 50%;
           color: #fff;
           display: table-cell;
-          font-size: 14px;
+          font-size: 40px;
           font-weight: bold;
-          height: 80px;
+          height: 60px;
           text-align: center;
           text-decoration: none;
           vertical-align: middle;
-          width: 80px;
+          width: 60px;
         }
+      }
+      .demo_more_tp {
+        bottom: 40%;
       }
     }
 }
