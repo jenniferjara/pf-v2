@@ -2,14 +2,12 @@
 
     'use strict';
 
-    /*var scrollMenus = function (e) {
-        e.preventDefault();
-        this.each(function () {
-            $('html, body').animate({
-                scrollTop: $(this).offset().top
-            }, 1000);
-        });
-    };*/
+    var scrollMenus = function () {
+        var id = $(this).find('a').attr("href"), posi, ele, padding = 50;
+        ele = $(id); posi = ($(ele).offset()||0).top - padding;
+
+        $('html, body').animate({scrollTop:posi}, 1000);
+    };
 
    	var scrollNav = function() {
 		var start_change = $('.navbar');
@@ -17,11 +15,11 @@
 	};
 
     var typed = new Typed('#typed', {
-        strings: ["Frontend Developer."],
-        typeSpeed: 100,
-        backSpeed: 80,
-        backDelay: 500,
-        startDelay: 500,
+        strings: ["Frontend Developer.", "Self-taught.", "UXD newbie."],
+        typeSpeed: 120,
+        backSpeed: 100,
+        backDelay: 800,
+        startDelay: 800,
         loop: true
     });
 
@@ -34,6 +32,10 @@
         });
 
         $(document).scroll(scrollNav);
+
+        //language=JQuery-CSS
+        $('ul.nav.navbar-nav > li').on('click', scrollMenus);
+        $('ul.hero_links_main:nth-child(1) > li').on('click', scrollMenus);
 
 
 	};

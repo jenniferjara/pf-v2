@@ -1,4 +1,5 @@
 #demo {
+    background-color: #f7f7f7;
     box-sizing: border-box;
     padding: 30px 20px;
 
@@ -10,18 +11,13 @@
       height: 350px;
 
       .demo_bg_overlay {
-        background-color: #fff;
-        background-repeat: no-repeat;
-        background-position: center;
-        -webkit-background-size: cover;
-        background-size: cover;
         text-align: center;
         width: 33%;
 
         .demo_content {
           /*display: table-cell;
           vertical-align: middle;*/
-          border-bottom: 1px solid #000000;
+          border-bottom: 1px solid #cecece;
           height: 330px;
           width: 95%;
 
@@ -57,12 +53,12 @@
 
       .demo_bg_overlay:nth-child(1) {
         .demo_content {
-          border-right: 1px solid #000000;
+          border-right: 1px solid #cecece;
         }
       }
       .demo_bg_overlay:nth-child(3) {
         .demo_content {
-          border-left: 1px solid #000000;
+          border-left: 1px solid #cecece;
         }
       }
     }
@@ -81,7 +77,15 @@
       border: 0px;
       background: transparent;
 
-      .bx-controls.bx-has-controls-direction {
+      .bx-pager.bx-default-pager a{
+        background: #a26785;
+      }
+      .bx-pager.bx-default-pager a.active {
+        background: #d2056d;
+      }
+
+      .bx-controls.bx-has-controls-direction,
+      .bx-controls.bx-has-pager {
         display: none;
       }
     }
@@ -93,10 +97,10 @@
       padding: 60px 20px 90px 20px;
 
       .bx-wrapper {
-        border-bottom: 1px solid #000;
-        border-top: 1px solid #000;
+        border-bottom: 1px solid #cecece;
+        border-top: 1px solid #cecece;
         margin: 0 auto;
-        padding: 20px 0px;
+        padding: 10px 0px 30px 0px;
         width: 400px;
 
         ul.bxslider {
@@ -132,14 +136,15 @@
                 }
               }
               .demo_bottom {
-                padding: 10px 20px;
+                padding: 10px;
                 font-size: 14px;
               }
             }
           }
         }
 
-        .bx-controls.bx-has-controls-direction {
+        .bx-controls.bx-has-controls-direction,
+        .bx-controls.bx-has-pager {
           display: block;
 
           .bx-prev {
@@ -176,7 +181,7 @@
 
       ul.bxslider {
         .demo_bg_overlay {
-          width: 85%;
+          width: 100%;
         }
       }
     }

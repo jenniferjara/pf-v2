@@ -1,9 +1,8 @@
 #knowledge {
 	padding-bottom: 6rem;
 	padding-top: 6rem;
-	background-color: #5f9276;
-	background-image: url("../images/pattern-blue-2.png");
-	background-repeat: repeat;
+	background: url("../images/pattern-blue-2.png") repeat;
+	background-color: #242540;
 
 	div.knowledge_wrap {
 		position: relative;
@@ -52,7 +51,7 @@
 				span {
 					position: relative;
 					display: block;
-					font-size: 14px;
+					font-size: 18px;
 					left: 50%;
 					top: 50%;
 					bottom: auto;
@@ -144,6 +143,12 @@
 @media (max-width: 992px) {
 	#knowledge {
 		height: auto;
+		h3.know_title_small {
+			color: #ffffff;
+			padding-bottom: 30px;
+			text-transform: uppercase;
+			text-align: center;
+		}
 
 		div.knowledge_wrap h2.knowledge_title {
 			display: none;
@@ -160,7 +165,19 @@
 				display: inline-block;
 				background-color: rgba(255,255,255,0.5);
 				font-size: 20px;
+
+				span {
+					font-size: 16px;
+				}
 			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	#knowledge {
+		div.knowledge_wrap ul > li > span {
+			font-size: 14px;
 		}
 	}
 }

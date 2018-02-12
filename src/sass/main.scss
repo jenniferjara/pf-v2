@@ -10,31 +10,36 @@
 
 body {
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 }
 h1 {
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 70px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 50px;
 }
 h2 {
-	font-family: 'Ubuntu', cursive;
-	font-size: 38px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 35px;
 }
 h3 {
+	font-family: 'Oswald', sans-serif;
 	font-size: 30px;
-    font-family: 'Ubuntu', cursive;
 }
 hr {
 	border-top: 3px solid #333;
 }
 footer {
-	background-color: #4c4c4c;
-	background-image: url("../images/pattern-blue.png");
-	background-repeat: repeat;
+	background-color: #242540;
 	color: #ffffff;
 	height: 82px;
 	@include flexbox();
 	@include align-items(center);
+
+	.footer_content_left {
+		text-align: left;
+	}
+	.footer_content_right {
+		text-align: right;
+	}
 }
 
 #body_wrap {
@@ -74,13 +79,19 @@ footer {
 
 @media screen and (max-width: 992px) {
 	body {
-		font-size: 16px;
+		font-size: 14px;
 	}
 	h1 {
-		font-size: 50px;
+		font-size: 45px;
 	}
 	h2 {
 		font-size: 30px;
+	}
+	footer {
+		.footer_content_right,
+		.footer_content_left {
+			text-align: center;
+		}
 	}
 }
 

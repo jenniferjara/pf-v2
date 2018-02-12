@@ -1,19 +1,19 @@
 #hero {
-	background: url("../images/header-bg.jpg") no-repeat center fixed;
+	background: url("../images/header-bg.jpg") no-repeat fixed center center;
 	background-size: cover;
+	background-color: #242540;
 	position: relative;
 	height: 100vh;
 
 	.hero_wellcome {
 		z-index: 2;
-		width: 100%;
+		width: 500px;
 		vertical-align: middle;
-		text-align: center;
-		padding: 0 20px;
+		text-align: left;
 		color: #fff;
 		position: absolute;
-		bottom: 50%;
-		left: 50%;
+		bottom: 55%;
+		left: 30%;
 		transform: translate(-50%, 50%);
 		-webkit-transform: translate(-50%, 50%);
 		-moz-transform: translate(-50%, 50%);
@@ -22,69 +22,21 @@
 		
 		h1, h2 {
 			text-shadow: rgba(0, 0, 0, 0.8) 0px 2px 4px;
-		}
-
-		ul.hero_main {
-			list-style: none;
-			display: block;
-			margin: 0 auto;
-			text-align: center;
-			padding: 0;
-			max-width: 900px;
-			font-size: 0.8em;
-
-			li {
-				display: inline-block;
-				margin: 5px 15px;
-				vertical-align: top;
-			}
-
-			a {
-				display: block;
-				width: 95px;
-				padding: 5px 0;
-				color: #fff;
-				font-size: 2em;
-				text-decoration: none;
-				text-shadow: none;
-				border-radius: 3px;
-				-webkit-transition: all 0.1s ease-in-out;
-				-moz-transition: all 0.1s ease-in-out;
-				-ms-transition: all 0.1s ease-in-out;
-				-o-transition: all 0.1s ease-in-out;
-				transition: all 0.1s ease-in-out;
-				text-shadow: rgba(0,0,0,.8) 0 2px 4px;
-			}
-
-			.subtitles {
-				display: block;
-				clear: both;
-				font-size: 0.5em;
-				line-height: 15px;
-			}
-		}
-
-		.hero_main_divider {
-			display: block;
-			margin: 5px auto;
-			width: 50%;
-			height: 1px;
-			border-top: rgba(0,0,0,0.1) 1px solid;
-			border-bottom: rgba(255,255,255,0.2) 1px solid;
+			margin-top: 0px;
 		}
 
 		.hero_text_typed {
-			padding-bottom: 30px;
+			padding-bottom: 20px;
 			text-shadow: rgba(0, 0, 0, 0.8) 0 2px 4px;
 			#typed {
 				font-family: 'Ubuntu', cursive;
-				font-size: 40px;
+				font-size: 25px;
 			}
 
 			.typed-cursor{
 				font-weight: 100;
 				padding: 0 8px;
-				font-size: 40px;
+				font-size: 25px;
 				-webkit-animation: blink 1s infinite;
 				-moz-animation: blink 1s infinite;
 				-ms-animation: blink 1s infinite;
@@ -104,6 +56,58 @@
 			}
 		}
 
+		.hero_links {
+			width: 75%;
+
+			ul.hero_links_main {
+				list-style: none;
+				display: block;
+				margin: 0;
+				text-align: center;
+				padding: 0;
+				width: 100%;
+				font-size: 0.8em;
+
+				li {
+					display: inline-block;
+					margin: 5px 10px;
+					vertical-align: top;
+				}
+
+				a {
+					display: block;
+					width: 95px;
+					padding: 5px 0;
+					color: #fff;
+					font-size: 2em;
+					text-decoration: none;
+					text-shadow: none;
+					border-radius: 3px;
+					-webkit-transition: all 0.1s ease-in-out;
+					-moz-transition: all 0.1s ease-in-out;
+					-ms-transition: all 0.1s ease-in-out;
+					-o-transition: all 0.1s ease-in-out;
+					transition: all 0.1s ease-in-out;
+					text-shadow: rgba(0,0,0,.8) 0 2px 4px;
+				}
+
+				.subtitles {
+					display: block;
+					clear: both;
+					font-size: 0.5em;
+					line-height: 15px;
+				}
+			}
+
+			.hero_main_divider {
+				display: block;
+				margin: 5px auto;
+				width: 80%;
+				height: 2px;
+				border-top: rgba(0,0,0,0.5) 1px solid;
+				border-bottom: rgba(255,255,255,0.5) 1px solid;
+			}
+		}
 	}
 	.hero_overlay {
 		position: absolute;
@@ -111,21 +115,30 @@
 		height: 100%;
 		top: 0;
 		left: 0;
-		background-color: rgba(79, 81, 128, 0.2);
+		background-color: rgba(193, 165, 179, 0.2);
 	}
 }
 
 @media screen and (max-width: 992px) {
 	#hero {
+		background-position: left center;
 		.hero_wellcome {
+			left: 50%;
+			padding: 0px 20px;
+			text-align: center;
+			width: 100%;
+
 			.hero_text_typed {
-				#typed, .typed-cursor { font-size: 30px; }
+				#typed, .typed-cursor { font-size: 20px; }
 			}
-			ul.hero_main {
-				li { margin: 0px 10px; }
-				a {	width: 80px }
+			.hero_links {
+				margin: 0 auto;
+				ul.hero_links_main {
+					li { margin: 0px 10px; }
+					a {	width: 80px }
+				}
+				.hero_main_divider { width: 60%; }
 			}
-			.hero_main_divider { width: 60%; }
 		}
 	}
 }
@@ -134,16 +147,19 @@
 	#hero {
 		.hero_wellcome {
 			.hero_text_typed {
-				#typed, .typed-cursor { font-size: 25px; }
+				#typed, .typed-cursor { font-size: 20px; }
 			}
-			ul.hero_main {
-				font-size: 0.6em;
-				padding: 0 25px;
-				li { margin: 0px 5px; }
+			.hero_links {
+				margin: inherit;
+				width: 100%;
+				ul.hero_links_main {
+					font-size: 12px;
+					li { margin: 0px 5px; }
 
-				a { width: 70px }
+					a { width: 70px }
+				}
+				.hero_main_divider { width: 50%; }
 			}
-			.hero_main_divider { width: 50%; }
 		}
 	}
 }
