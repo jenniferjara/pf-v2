@@ -23,7 +23,7 @@
 			padding: 20px;
 			span {
 				display: block;
-				color: #d2056d;
+				color: #e06275;
 				font-size: 25px;
 				font-weight: bold;
 				position: relative;
@@ -51,7 +51,7 @@
 				span {
 					position: relative;
 					display: block;
-					font-size: 18px;
+					font-size: 16px;
 					left: 50%;
 					top: 50%;
 					bottom: auto;
@@ -134,7 +134,7 @@
 				top: 60px;
 			}
 			ul li.option-sm-4 {
-				left: -50px;
+				left: -10px;
 				top: 15px;
 			}
 		}
@@ -148,6 +148,9 @@
 			padding-bottom: 30px;
 			text-transform: uppercase;
 			text-align: center;
+			border-bottom: 4px solid #e06275;
+			width: 70%;
+			margin: 0px auto 30px auto
 		}
 
 		div.knowledge_wrap h2.knowledge_title {
@@ -176,6 +179,10 @@
 
 @media (max-width: 500px) {
 	#knowledge {
+		h3.know_title_small {
+			width: 100%;
+		}
+
 		div.knowledge_wrap ul > li > span {
 			font-size: 14px;
 		}

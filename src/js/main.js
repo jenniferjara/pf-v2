@@ -2,11 +2,13 @@
 
     'use strict';
 
+
+
     var scrollMenus = function () {
-        var id = $(this).find('a').attr("href"), posi, ele, padding = 50;
+        var id = $(this).find('a').attr("href"), posi, ele, padding = 65;
         ele = $(id); posi = ($(ele).offset()||0).top - padding;
 
-        $('html, body').animate({scrollTop:posi}, 1000);
+        $('html, body').animate({scrollTop:posi}, 1500);
     };
 
    	var scrollNav = function() {
@@ -15,7 +17,7 @@
 	};
 
     var typed = new Typed('#typed', {
-        strings: ["Frontend Developer.", "Self-taught.", "UXD newbie."],
+        strings: ["Frontend Developer.", "Self-taught.", "UX newbie."],
         typeSpeed: 120,
         backSpeed: 100,
         backDelay: 800,
