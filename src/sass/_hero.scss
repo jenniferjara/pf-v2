@@ -66,7 +66,6 @@
 				text-align: center;
 				padding: 0;
 				width: 100%;
-				font-size: 0.8em;
 
 				li {
 					display: inline-block;
@@ -79,7 +78,7 @@
 					width: 95px;
 					padding: 5px 0;
 					color: #fff;
-					font-size: 2em;
+					font-size: 30px;
 					text-decoration: none;
 					text-shadow: none;
 					border-radius: 3px;
@@ -156,7 +155,7 @@
 					font-size: 12px;
 					li { margin: 0px 5px; }
 
-					a { width: 70px }
+					a { font-size: 25px; }
 				}
 				.hero_main_divider { width: 50%; }
 			}

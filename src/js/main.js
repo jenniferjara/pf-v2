@@ -8,13 +8,20 @@
         var id = $(this).find('a').attr("href"), posi, ele, padding = 65;
         ele = $(id); posi = ($(ele).offset()||0).top - padding;
 
-        $('html, body').animate({scrollTop:posi}, 1500);
+        $('html, body').animate({scrollTop:posi}, 500);
     };
 
    	var scrollNav = function() {
 		var start_change = $('.navbar');
 			start_change.toggleClass('is-fill', $(this).scrollTop() > start_change.height());
 	};
+
+    var move = function(){
+        $(this).addClass("animated rubberBand");
+    };
+    var quiet = function(){
+        $(this).removeClass("animated rubberBand")
+    };
 
     var typed = new Typed('#typed', {
         strings: ["Frontend Developer.", "Self-taught.", "UX newbie."],
@@ -32,6 +39,9 @@
             mode: 'vertical',
             slideMargin: 30
         });
+
+        $('li[class^="option-"]').mouseenter(move);
+        $('li[class^="option-"]').mouseleave(quiet);
 
         $(document).scroll(scrollNav);
 

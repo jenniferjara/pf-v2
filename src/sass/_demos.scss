@@ -5,7 +5,7 @@
       background-color: #242540;
       text-transform: uppercase;
       text-align: center;
-      padding: 30px 0px;
+      padding: 30px 0px 45px 0px;
       color: #ffffff;
 
       h2 {
@@ -29,7 +29,7 @@
         background-position: center;
         text-align: center;
         width: 50%;
-        height: 330px;
+        height: 400px;
 
         .demo_content {
           width: 100%;
@@ -39,6 +39,7 @@
             padding: 20px 0px;
 
             h4 {
+              font-weight: bold;
               letter-spacing: 10px;
               margin: 0;
               text-transform: uppercase;
