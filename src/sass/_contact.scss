@@ -1,11 +1,11 @@
 #contact {
 	@include flexbox();
 	@include align-items(center);
-	//background: url("../images/pattern-light.png") repeat;
+	background: url("../images/pattern-light.png") repeat;
     background-color: #f7f7f7;
     padding-top: 10rem;
     padding-bottom: 10rem;
-    height: 650px;
+    height: 600px;
 
 	.contact_text {
       margin-top: 30px;
