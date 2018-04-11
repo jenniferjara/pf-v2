@@ -37,8 +37,37 @@
 		position: fixed;
 		width: 100%;
 		top: 0;
-		transition: background-color 0.2s,
+        transition: background-color 0.2s,
 			transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+        a.nav_top {
+          color: transparent;
+          display: block;
+          background-color: transparent;
+          border-bottom-left-radius: 50%;
+          font-size: 25px;
+          line-height: 40px;
+          text-align: center;
+          text-decoration: none;
+
+          position: absolute;
+          top: 61px;
+          right: 0;
+          width: 50px;
+          height: 50px;
+          transition: background-color 0.2s,
+            transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+          i {
+            position: relative;
+            top: 0px;
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            -ms-transition: all 0.2s ease;
+            -o-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+          }
+        }
 	}
 	.hidden-nav {
 		display: none;
@@ -47,6 +76,7 @@
 		background-color: #242540;
 		box-shadow: 0 1px 0 #242540;
 		.navbar-nav {
+			margin: 0px;
 			visibility: visible;
 		}
 		.navbar-nav > li > a {
@@ -61,6 +91,21 @@
 				text-decoration: none;
 			}
 		}
+
+      a.nav_top {
+        background-color: #242540;
+        color: #ffffff;
+
+        &:hover,
+        &:active,
+        &:visited {
+          text-decoration: none;
+        }
+        &:hover i{
+          color: #e06275;
+          top: -5px;
+        }
+      }
 	}
 }
 
