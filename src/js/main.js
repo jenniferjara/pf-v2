@@ -22,7 +22,7 @@
     };
 
     var typed = new Typed('#typed', {
-        strings: ["Frontend Developer.", "Self-taught.", "UX newbie."],
+        strings: ["Frontend Developer jr.", "Self-taught.", "UX Designer newbie."],
         typeSpeed: 120,
         backSpeed: 100,
         backDelay: 800,

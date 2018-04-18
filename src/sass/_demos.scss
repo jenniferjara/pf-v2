@@ -1,8 +1,9 @@
 #demo {
-    background-color: #f7f7f7;
+    background: url("../images/pattern-blue-2.png") repeat;
+    background-color: #242540;
 
     .demo_title {
-      background-color: #242540;
+      background-color: #9a5e69;
       text-transform: uppercase;
       text-align: center;
       padding: 30px 0px 45px 0px;
@@ -24,15 +25,12 @@
         @include align-items(center);
         @include justify-content(center);
 
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
         text-align: center;
-        width: 50%;
+        width: 33.33%;
         height: 400px;
 
         .demo_content {
-          width: 100%;
+          width: 90%;
           color: #ffffff;
 
           .demo_bg_title {
@@ -40,7 +38,7 @@
 
             h4 {
               font-weight: bold;
-              letter-spacing: 10px;
+              letter-spacing: 8px;
               margin: 0;
               text-transform: uppercase;
             }
@@ -66,8 +64,8 @@
 
 
               &:hover {
-                background-color: #D2929C;
-                border-color: #D2929C;
+                background-color: #9a5e69;
+                border-color: #9a5e69;
               }
               &:hover,
               &:visited,
@@ -77,16 +75,16 @@
             }
           }
           .demo_text {
-            width: 50%;
+            width: 80%;
             margin: 0 auto;
             padding: 15px 0px;
             font-size: 16px;
 
             a {
               letter-spacing: 5px;
-              display: block;
+              display: inline-block;
               font-weight: 700;
-              color: #f7df29;
+              color: #2ddab2;
               text-transform: uppercase;
               padding-bottom: 5px;
               border-bottom: 2px solid transparent;
@@ -99,7 +97,7 @@
               &:active,
               &:visited {
                 text-decoration: none;
-                border-bottom: 2px solid #f7df29;
+                border-bottom: 2px solid #2ddab2;
               }
             }
           }
@@ -108,31 +106,12 @@
     }
 
     .demo_bg:nth-child(2){
-      .demo_bg_wrap:nth-child(1) {
-        background-image: url("../images/demos/chat.jpg");
-      }
-
-      .demo_bg_wrap:nth-child(2) {
-        background-image: url("../images/demos/music.jpg");
-      }
-
+      .demo_bg_wrap:nth-child(1),
+      .demo_bg_wrap:nth-child(2),
       .demo_bg_wrap:nth-child(3) {
-        background-image: url("../images/demos/route-v2.jpg");
-      }
-
-      .demo_bg_wrap:nth-child(4) {
-        background-image: url("../images/demos/trello.jpg");
-      }
-
-      .demo_bg_wrap:nth-child(5) {
-        background-image: url("../images/demos/tweet.jpg");
-      }
-
-      .demo_bg_wrap:nth-child(6) {
-        background-image: url("../images/demos/beatles.jpg");
+        box-shadow: 0px 25px 5px -24px #ffffff;
       }
     }
-
 }
 
 @media screen and (max-width: 992px){
@@ -143,9 +122,16 @@
 
           .demo_content {
             .demo_text {
-              font-size: 14px;
+              width: 50%;
             }
           }
+        }
+      }
+
+      .demo_bg:nth-child(2){
+        .demo_bg_wrap:nth-child(4),
+        .demo_bg_wrap:nth-child(5) {
+          box-shadow: 0px 25px 5px -24px #ffffff;
         }
       }
     }
@@ -161,7 +147,11 @@
         }
       }
       .demo_text {
+        font-size: 14px;
         width: 75%;
+        a {
+          display: block;
+        }
       }
     }
 
