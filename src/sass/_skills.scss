@@ -3,6 +3,7 @@
 	padding-top: 6rem;
 	background: url("../images/pattern-blue-2.png") repeat;
 	background-color: #242540;
+	height: 100vh;
 
 	div.knowledge_wrap {
 		position: relative;
@@ -65,7 +66,11 @@
 	}
 }
 
-
+@media screen and (max-width: 1440px) {
+	#knowledge {
+		height: auto;
+	}
+}
 @media (min-width: 993px) {
 	#knowledge {
 		div.knowledge_wrap {
